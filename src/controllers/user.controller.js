@@ -17,5 +17,19 @@ export const newUser = async (req,res)=>{
   }
 }
 
-
+export const login = async (req,res)=>{
+  try{
+    const data = await UserService.login(req.body);
+    res.status(HttpStatus.CREATED).json({
+      code:HttpStatus.CREATED,
+      data:data,
+      message:"User Login Successfully"
+    });
+  }catch(error){
+    res.status(HttpStatus.BAD_REQUEST).json({
+      code:HttpStatus.BAD_GATEWAY,
+      message:error.message
+    });
+  }
+}
 
