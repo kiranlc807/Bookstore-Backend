@@ -1,0 +1,38 @@
+info: ::1 - - [22/Jan/2024:05:46:23 +0000] "POST /api/v1/users/login HTTP/1.1" 201 211 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:46:48 +0000] "GET /api/v1/books HTTP/1.1" 500 52 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:47:57 +0000] "GET /api/v1/books HTTP/1.1" 400 39 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:49:16 +0000] "GET /api/v1/books HTTP/1.1" 200 9287 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:49:41 +0000] "GET /api/v1/books/6214803b05253301a4fda584 HTTP/1.1" 200 1335 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:49:53 +0000] "GET /api/v1/books/sortby/low HTTP/1.1" 200 9275 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:50:23 +0000] "GET /api/v1/books/sortby/high HTTP/1.1" 200 9275 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:51:34 +0000] "GET /api/v1/books/search HTTP/1.1" 400 118 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:52:36 +0000] "GET /api/v1/books/search HTTP/1.1" 400 118 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:54:06 +0000] "GET /api/v1/books/search HTTP/1.1" 400 118 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:54:17 +0000] "GET /api/v1/books/search/ HTTP/1.1" 400 118 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:05:57:19 +0000] "GET /api/v1/books/search/ HTTP/1.1" 200 384 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [22/Jan/2024:06:22:45 +0000] "POST /api/v1/users/login HTTP/1.1" 201 211 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+info: ::1 - - [22/Jan/2024:06:22:46 +0000] "GET /api/v1/books HTTP/1.1" 500 48 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+info: ::1 - - [22/Jan/2024:06:22:46 +0000] "GET /api/v1/books HTTP/1.1" 500 48 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+info: ::1 - - [22/Jan/2024:06:22:48 +0000] "GET /api/v1/books HTTP/1.1" 500 48 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+info: ::1 - - [22/Jan/2024:06:22:48 +0000] "GET /api/v1/books HTTP/1.1" 500 48 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+info: ::1 - - [22/Jan/2024:06:23:08 +0000] "GET /api/v1/books HTTP/1.1" 500 48 "http://localhost:3001/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+
+info: ::1 - - [22/Jan/2024:06:23:08 +0000] "GET /api/v1/books HTTP/1.1" 500 48 "http://localhost:3001/" "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+
