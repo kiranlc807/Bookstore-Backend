@@ -22,3 +22,17 @@ info: ::1 - - [23/Jan/2024:04:19:42 +0000] "POST /api/v1/cart/6214803b05253301a4
 
 info: ::1 - - [23/Jan/2024:04:19:52 +0000] "GET /api/v1/cart HTTP/1.1" 200 283 "-" "PostmanRuntime/7.36.1"
 
+info: ::1 - - [23/Jan/2024:06:05:05 +0000] "GET /api/v1/books HTTP/1.1" 200 9287 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:05:23 +0000] "POST /api/v1/cart/6214803b05253301a4fda584 HTTP/1.1" 201 161 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:05:27 +0000] "POST /api/v1/cart/6214803b05253301a4fda584 HTTP/1.1" 201 161 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:05:42 +0000] "POST /api/v1/cart/6215178d05253301a4fda5c4 HTTP/1.1" 201 257 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:06:20 +0000] "GET /api/v1/cart HTTP/1.1" 200 259 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:15:52 +0000] "PUT /api/v1/cart/reduce/6214803b05253301a4fda584 HTTP/1.1" 200 272 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:15:57 +0000] "PUT /api/v1/cart/reduce/6214803b05253301a4fda584 HTTP/1.1" 200 176 "-" "PostmanRuntime/7.36.1"
+

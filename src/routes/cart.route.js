@@ -10,4 +10,6 @@ router.get('',userAuth,CartController.getCartItems);
 
 router.delete('/:_id',userAuth,CartController.removeCartItem);
 
+router.put('/reduce/:_id', userAuth, CartController.reduceQuantity);
+
 export default router;
