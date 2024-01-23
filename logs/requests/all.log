@@ -103,3 +103,13 @@ info: ::1 - - [23/Jan/2024:06:15:52 +0000] "PUT /api/v1/cart/reduce/6214803b0525
 
 info: ::1 - - [23/Jan/2024:06:15:57 +0000] "PUT /api/v1/cart/reduce/6214803b05253301a4fda584 HTTP/1.1" 200 176 "-" "PostmanRuntime/7.36.1"
 
+info: ::1 - - [23/Jan/2024:06:35:41 +0000] "POST /api/v1/wishlist/6214803b05253301a4fda584 HTTP/1.1" 201 140 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:35:44 +0000] "POST /api/v1/wishlist/6214803b05253301a4fda584 HTTP/1.1" 400 60 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:36:13 +0000] "POST /api/v1/wishlist/6215178d05253301a4fda5c4 HTTP/1.1" 201 211 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:36:29 +0000] "GET /api/v1/wishlist/6215178d05253301a4fda5c4 HTTP/1.1" 404 47 "-" "PostmanRuntime/7.36.1"
+
+info: ::1 - - [23/Jan/2024:06:36:36 +0000] "GET /api/v1/wishlist HTTP/1.1" 200 213 "-" "PostmanRuntime/7.36.1"
+
