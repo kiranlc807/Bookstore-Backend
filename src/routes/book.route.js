@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('',userAuth,BookController.getAllBooks);
 
-router.get('/bookId/:id',BookController.GetBookByID);
+router.get('/bookId/:id',userAuth,BookController.GetBookByID);
 
 router.get('/sortBy/:sort',userAuth,BookController.sortByPrice);
 
