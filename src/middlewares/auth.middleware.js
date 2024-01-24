@@ -12,7 +12,6 @@ import jwt from 'jsonwebtoken';
 export const userAuth = async (req, res, next) => {
   try {
     let bearerToken = req.header('Authorization');
-    console.log(bearerToken);
     if (!bearerToken)
       throw {
         code: HttpStatus.BAD_REQUEST,
@@ -20,7 +19,6 @@ export const userAuth = async (req, res, next) => {
       };
     bearerToken = bearerToken.split(' ')[1];
     req.user = jwt.verify(bearerToken, process.env.SECRET_KEY);
-    console.log(req.user);
     next();
   } catch (error) {
     next(error);
