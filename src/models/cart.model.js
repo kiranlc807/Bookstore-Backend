@@ -49,7 +49,12 @@ const cartSchema = new mongoose.Schema({
     },
     totalPrice: { 
         type: Number, 
-        default: 0 },
+        default: 0 
+    },
+    isParchese: {
+      type: Boolean,
+      default: false
+    }
     });
 
 const Cart = mongoose.model('Cart', cartSchema);
