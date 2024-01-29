@@ -22,7 +22,7 @@ export const addOrder = async (req, res) => {
 export const getOrderList = async (req, res) => {
   try {
     const orders = await OrderService.getOrderListService(req.user.userId);
-
+    // console.log(orders.orderData[0]);
     res.status(HttpStatus.OK).json({
       code: HttpStatus.OK,
       data: orders,

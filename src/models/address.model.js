@@ -1,4 +1,5 @@
 // address.model.js
+import boolean from '@hapi/joi/lib/types/boolean';
 import mongoose from 'mongoose';
 
 const addressSchema = new mongoose.Schema({
@@ -11,6 +12,8 @@ const addressSchema = new mongoose.Schema({
       city: { type: String},
       state: { type: String},
       type: { type: String},
+      default:{type:Boolean,
+              default:false},
     },
   ],
 });

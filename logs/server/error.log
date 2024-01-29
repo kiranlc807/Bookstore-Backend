@@ -1132,3 +1132,143 @@ error:
       method - GET 
       IP - ::1
      {"timestamp":"2024-01-23T08:34:19.720Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/address 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-01-26T09:56:21.664Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T06:59:50.285Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\jsonwebtoken\verify.js:53:17)
+    at _callee$ (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\src\middlewares\/auth.middleware.js:21:20)
+    at tryCatch (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at userAuth (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/books/search 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-01-29T07:00:48.732Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:04:44.117Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:05:18.896Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:05:56.117Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:06:28.332Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:06:52.927Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:07:13.831Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:09:05.516Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:09:38.195Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:10:10.348Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/books/search 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-01-29T07:10:36.429Z"}

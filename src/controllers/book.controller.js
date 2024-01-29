@@ -51,6 +51,7 @@ export const sortByPrice = async (req,res)=>{
 
 export const getSearchBooks = async (req,res) => {
     try{
+        console.log(req.body);
         const book = await BookService.getSearchBooks(req.body.bookName);
         res.status(HttpStatus.OK).json({
             code:HttpStatus.OK,

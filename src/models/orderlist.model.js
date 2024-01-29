@@ -10,6 +10,8 @@ const orderItemSchema = new Schema({
 });
 
 const addressSchema = new Schema({
+  fullname:{type:String},
+  mobile:{type:String},
   address: { type: String, },
   city: { type: String,  },
   state: { type: String, },
