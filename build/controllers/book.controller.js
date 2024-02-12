@@ -124,29 +124,30 @@ var getSearchBooks = exports.getSearchBooks = /*#__PURE__*/function () {
       while (1) switch (_context4.prev = _context4.next) {
         case 0:
           _context4.prev = 0;
-          _context4.next = 3;
+          console.log(req.body);
+          _context4.next = 4;
           return BookService.getSearchBooks(req.body.bookName);
-        case 3:
+        case 4:
           book = _context4.sent;
           res.status(_httpStatusCodes["default"].OK).json({
             code: _httpStatusCodes["default"].OK,
             data: book,
             message: 'feached Successfully'
           });
-          _context4.next = 10;
+          _context4.next = 11;
           break;
-        case 7:
-          _context4.prev = 7;
+        case 8:
+          _context4.prev = 8;
           _context4.t0 = _context4["catch"](0);
           res.status(_httpStatusCodes["default"].BAD_REQUEST).json({
             code: _httpStatusCodes["default"].OK,
             message: _context4.t0.message
           });
-        case 10:
+        case 11:
         case "end":
           return _context4.stop();
       }
-    }, _callee4, null, [[0, 7]]);
+    }, _callee4, null, [[0, 8]]);
   }));
   return function getSearchBooks(_x7, _x8) {
     return _ref4.apply(this, arguments);

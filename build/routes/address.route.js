@@ -17,4 +17,5 @@ var router = _express["default"].Router();
 router.post('', _auth.userAuth, AddressController.addAddress);
 router.get('', _auth.userAuth, AddressController.getAddressList);
 router["delete"]('/:addressIndex', _auth.userAuth, AddressController.removeAddress);
+router.put('/set-default', _auth.userAuth, AddressController.setDefaultAddress);
 var _default = exports["default"] = router;

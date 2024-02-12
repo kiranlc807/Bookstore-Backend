@@ -5,7 +5,7 @@ var _typeof = require("@babel/runtime/helpers/typeof");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.removeAddress = exports.getAddressList = exports.addAddress = void 0;
+exports.setDefaultAddress = exports.removeAddress = exports.getAddressList = exports.addAddress = void 0;
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 var AddressService = _interopRequireWildcard(require("../services/address.service"));
@@ -117,5 +117,38 @@ var removeAddress = exports.removeAddress = /*#__PURE__*/function () {
   }));
   return function removeAddress(_x5, _x6) {
     return _ref3.apply(this, arguments);
+  };
+}();
+
+// addressController.js
+
+var setDefaultAddress = exports.setDefaultAddress = /*#__PURE__*/function () {
+  var _ref4 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee4(req, res) {
+    return _regenerator["default"].wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          _context4.prev = 0;
+          _context4.next = 3;
+          return AddressService.updateDefaultAddress(req.user.userId, req.body.addressId);
+        case 3:
+          res.status(200).json({
+            message: 'Default address updated successfully'
+          });
+          _context4.next = 9;
+          break;
+        case 6:
+          _context4.prev = 6;
+          _context4.t0 = _context4["catch"](0);
+          res.status(400).json({
+            error: _context4.t0.message
+          });
+        case 9:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4, null, [[0, 6]]);
+  }));
+  return function setDefaultAddress(_x7, _x8) {
+    return _ref4.apply(this, arguments);
   };
 }();

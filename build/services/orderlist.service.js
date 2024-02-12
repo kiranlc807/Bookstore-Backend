@@ -192,9 +192,9 @@ var addOrderService = exports.addOrderService = /*#__PURE__*/function () {
           throw new Error('User does not have any addresses.');
         case 11:
           // Find the chosen address by ID, or use the first address if ID is not provided
-          chosenAddress = addressId ? userAddresses.addresses.find(function (address) {
-            return address._id.equals(addressId);
-          }) : userAddresses.addresses[0];
+          chosenAddress = userAddresses.addresses.find(function (address) {
+            return address["default"] === true;
+          });
           if (chosenAddress) {
             _context2.next = 14;
             break;

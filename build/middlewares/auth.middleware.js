@@ -25,29 +25,30 @@ var userAuth = exports.userAuth = /*#__PURE__*/function () {
         case 0:
           _context.prev = 0;
           bearerToken = req.header('Authorization');
+          console.log("Token", bearerToken);
           if (bearerToken) {
-            _context.next = 4;
+            _context.next = 5;
             break;
           }
           throw {
             code: _httpStatusCodes["default"].BAD_REQUEST,
             message: 'Authorization token is required'
           };
-        case 4:
+        case 5:
           bearerToken = bearerToken.split(' ')[1];
           req.user = _jsonwebtoken["default"].verify(bearerToken, process.env.SECRET_KEY);
           next();
-          _context.next = 12;
+          _context.next = 13;
           break;
-        case 9:
-          _context.prev = 9;
+        case 10:
+          _context.prev = 10;
           _context.t0 = _context["catch"](0);
           next(_context.t0);
-        case 12:
+        case 13:
         case "end":
           return _context.stop();
       }
-    }, _callee, null, [[0, 9]]);
+    }, _callee, null, [[0, 10]]);
   }));
   return function userAuth(_x, _x2, _x3) {
     return _ref.apply(this, arguments);

@@ -1,5 +1,4 @@
 // address.model.js
-import boolean from '@hapi/joi/lib/types/boolean';
 import mongoose from 'mongoose';
 
 const addressSchema = new mongoose.Schema({

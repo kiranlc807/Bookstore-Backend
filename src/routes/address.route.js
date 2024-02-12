@@ -8,5 +8,6 @@ const router = express.Router();
 router.post('', userAuth, AddressController.addAddress);
 router.get('', userAuth, AddressController.getAddressList);
 router.delete('/:addressIndex', userAuth, AddressController.removeAddress);
+router.put('/set-default',userAuth, AddressController.setDefaultAddress);
 
 export default router;

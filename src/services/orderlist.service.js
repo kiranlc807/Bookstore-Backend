@@ -168,9 +168,8 @@ export const addOrderService = async (userId, addressId) => {
     }
 
     // Find the chosen address by ID, or use the first address if ID is not provided
-    const chosenAddress = addressId
-      ? userAddresses.addresses.find(address => address._id.equals(addressId))
-      : userAddresses.addresses[0];
+    const chosenAddress = userAddresses.addresses.find(address => address.default===true)
+
 
     if (!chosenAddress) {
       throw new Error('Chosen address not found. Please select a valid address.');
@@ -235,7 +234,7 @@ export const addOrderService = async (userId, addressId) => {
 
     return ;
   } catch (error) {
-    throw new Error(`Error creating order: ${error.message}`);
+    throw new Error (error.message);
   }
 };
 

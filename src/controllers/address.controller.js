@@ -39,7 +39,7 @@ export const getAddressList = async (req, res) => {
 export const removeAddress = async (req, res) => {
   try {
     const addresses = await AddressService.removeAddressService(req.user.userId, req.params.addressIndex);
-
+    console.log(req.params.addressIndex,"addresID");
     res.status(HttpStatus.OK).json({
       code: HttpStatus.OK,
       data: addresses,
@@ -52,3 +52,17 @@ export const removeAddress = async (req, res) => {
     });
   }
 };
+
+// addressController.js
+
+export const setDefaultAddress=async(req, res)=>{
+  try {
+    await AddressService.updateDefaultAddress(req.user.userId, req.body.addressId);
+    res.status(200).json({ message: 'Default address updated successfully' });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+}
+
+
+

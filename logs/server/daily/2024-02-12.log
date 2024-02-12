@@ -1,0 +1,270 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T04:02:12.228Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T04:02:12.246Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.verify (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\src\middlewares\/auth.middleware.js:22:20)
+    at tryCatch (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at userAuth (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\body-parser\lib\types\json.js:110:7)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at internalNext (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\index.js:142:6)
+    at xXssProtectionMiddleware (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\middlewares\x-xss-protection\index.js:6:3)
+    at internalNext (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\index.js:145:6)
+    at referrerPolicyMiddleware (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\middlewares\referrer-policy\index.js:24:3)
+    at internalNext (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\index.js:145:6)
+    at xPermittedCrossDomainPoliciesMiddleware (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\middlewares\x-permitted-cross-domain-policies\index.js:15:3) 
+    url - /api/v1/address 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-12T04:04:56.051Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.verify (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\src\middlewares\/auth.middleware.js:22:20)
+    at tryCatch (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at userAuth (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\body-parser\lib\types\json.js:110:7)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at internalNext (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\index.js:142:6)
+    at xXssProtectionMiddleware (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\middlewares\x-xss-protection\index.js:6:3)
+    at internalNext (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\index.js:145:6)
+    at referrerPolicyMiddleware (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\middlewares\referrer-policy\index.js:24:3)
+    at internalNext (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\index.js:145:6)
+    at xPermittedCrossDomainPoliciesMiddleware (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\middlewares\x-permitted-cross-domain-policies\index.js:15:3) 
+    url - /api/v1/address 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-12T04:04:56.066Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.verify (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\src\middlewares\/auth.middleware.js:22:20)
+    at tryCatch (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at userAuth (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\body-parser\lib\types\json.js:110:7)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\express\lib\router\index.js:280:10)
+    at internalNext (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\index.js:142:6)
+    at xXssProtectionMiddleware (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\middlewares\x-xss-protection\index.js:6:3)
+    at internalNext (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\index.js:145:6)
+    at referrerPolicyMiddleware (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\middlewares\referrer-policy\index.js:24:3)
+    at internalNext (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\index.js:145:6)
+    at xPermittedCrossDomainPoliciesMiddleware (C:\Users\Kirana N\WORKSPACE\BookStore_BackEnd\node_modules\helmet\dist\middlewares\x-permitted-cross-domain-policies\index.js:15:3) 
+    url - /api/v1/address 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-12T04:05:25.330Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/address/65b79033dcf2c28044f9ec93 
+      method - DELETE 
+      IP - ::1
+     {"timestamp":"2024-02-12T04:50:06.352Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/address/65b79033dcf2c28044f9ec93 
+      method - DELETE 
+      IP - ::1
+     {"timestamp":"2024-02-12T04:50:18.914Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/address/65b79033dcf2c28044f9ec93 
+      method - DELETE 
+      IP - ::1
+     {"timestamp":"2024-02-12T04:50:42.210Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T04:56:42.123Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T04:56:42.140Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T04:56:48.628Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T04:56:48.649Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T04:56:57.063Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T04:56:57.084Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:01:01.989Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:01:02.022Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:01:20.320Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:01:20.338Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:01:38.879Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:01:38.896Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:01:59.574Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:01:59.589Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:03:33.437Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:03:33.458Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:05:04.443Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:05:04.459Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:07:08.693Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:07:08.713Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:08:07.262Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:08:07.284Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:09:07.823Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:09:07.842Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:09:46.908Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:09:46.929Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:11:02.518Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:11:02.534Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:12:55.970Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:12:55.988Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:13:14.474Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:13:14.499Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:13:26.268Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:13:26.284Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:13:31.274Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:13:31.294Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:13:37.536Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:13:37.552Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:15:17.696Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:15:17.720Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:15:23.649Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:15:23.669Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:17:07.064Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:17:07.079Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:17:11.888Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:17:11.905Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:17:19.913Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:17:19.936Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:17:59.300Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:17:59.320Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:21:08.390Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:21:08.410Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:21:13.899Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:21:13.918Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:21:23.829Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:21:23.850Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-12T05:24:41.473Z"}
+info: Connected to the database. {"timestamp":"2024-02-12T05:24:41.490Z"}

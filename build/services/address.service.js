@@ -4,7 +4,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.removeAddressService = exports.getAddressListService = exports.addAddressService = void 0;
+exports.updateDefaultAddress = exports.removeAddressService = exports.getAddressListService = exports.addAddressService = void 0;
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 var _address = _interopRequireDefault(require("../models/address.model"));
@@ -125,5 +125,69 @@ var removeAddressService = exports.removeAddressService = /*#__PURE__*/function 
   }));
   return function removeAddressService(_x4, _x5) {
     return _ref3.apply(this, arguments);
+  };
+}();
+var updateDefaultAddress = exports.updateDefaultAddress = /*#__PURE__*/function () {
+  var _ref4 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee4(userId, addressId) {
+    var addresses, addressIndex, newDefaultAddress, previousDefaultAddress;
+    return _regenerator["default"].wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          _context4.prev = 0;
+          _context4.next = 3;
+          return _address["default"].findOne({
+            userId: userId
+          });
+        case 3:
+          addresses = _context4.sent;
+          if (addresses) {
+            _context4.next = 6;
+            break;
+          }
+          throw new Error('Addresses not found');
+        case 6:
+          addressIndex = addresses.addresses.findIndex(function (address) {
+            return address._id.equals(addressId);
+          });
+          if (!(addressIndex === -1)) {
+            _context4.next = 9;
+            break;
+          }
+          throw new Error('Address not found');
+        case 9:
+          newDefaultAddress = addresses.addresses[addressIndex];
+          if (!(newDefaultAddress["default"] === true)) {
+            _context4.next = 12;
+            break;
+          }
+          return _context4.abrupt("return");
+        case 12:
+          // Update new default address
+          newDefaultAddress["default"] = true;
+
+          // Find and update the previous default address, if any
+          previousDefaultAddress = addresses.addresses.find(function (address) {
+            return address["default"] === true && !address._id.equals(addressId);
+          });
+          if (previousDefaultAddress) {
+            previousDefaultAddress["default"] = false;
+          }
+          _context4.next = 17;
+          return addresses.save();
+        case 17:
+          _context4.next = 22;
+          break;
+        case 19:
+          _context4.prev = 19;
+          _context4.t0 = _context4["catch"](0);
+          throw _context4.t0;
+        case 22:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4, null, [[0, 19]]);
+  }));
+  return function updateDefaultAddress(_x6, _x7) {
+    return _ref4.apply(this, arguments);
   };
 }();

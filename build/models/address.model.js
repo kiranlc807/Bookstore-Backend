@@ -32,6 +32,10 @@ var addressSchema = new _mongoose["default"].Schema({
     },
     type: {
       type: String
+    },
+    "default": {
+      type: Boolean,
+      "default": false
     }
   }]
 });

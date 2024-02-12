@@ -12,7 +12,6 @@ import jwt from 'jsonwebtoken';
 export const userAuth = async (req, res, next) => {
   try {
     let bearerToken = req.header('Authorization');
-    console.log("Token",bearerToken);
     if (!bearerToken)
       throw {
         code: HttpStatus.BAD_REQUEST,

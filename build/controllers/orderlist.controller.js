@@ -60,6 +60,7 @@ var getOrderList = exports.getOrderList = /*#__PURE__*/function () {
           return OrderService.getOrderListService(req.user.userId);
         case 3:
           orders = _context2.sent;
+          // console.log(orders.orderData[0]);
           res.status(_httpStatusCodes["default"].OK).json({
             code: _httpStatusCodes["default"].OK,
             data: orders,
