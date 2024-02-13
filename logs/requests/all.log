@@ -21464,3 +21464,7 @@ info: ::1 - - [13/Feb/2024:04:40:45 +0000] "GET /api/v1/address HTTP/1.1" 304 - 
 
 info: ::1 - - [13/Feb/2024:04:40:48 +0000] "POST /api/v1/orders HTTP/1.1" 201 50 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
 
+info: ::1 - - [13/Feb/2024:05:24:06 +0000] "GET /api/v1/books/6214803b05253301a4fda584 HTTP/1.1" 304 - "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Feb/2024:05:24:06 +0000] "GET /api/v1/books/6214803b05253301a4fda584 HTTP/1.1" 304 - "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+
